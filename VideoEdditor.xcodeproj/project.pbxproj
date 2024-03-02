@@ -123,6 +123,93 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		57A5820B2B93D56600756C78 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				57A5820C2B93D5AA00756C78 /* Auth */,
+				57A5820D2B93D5D000756C78 /* PremialPurcheses */,
+				57A5820E2B93D60200756C78 /* Main */,
+				57A5820F2B93D63C00756C78 /* Templates */,
+				57A582102B93D66C00756C78 /* Edditor */,
+				57A582112B93D68F00756C78 /* Music */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		57A5820C2B93D5AA00756C78 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		57A5820D2B93D5D000756C78 /* PremialPurcheses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PremialPurcheses;
+			sourceTree = "<group>";
+		};
+		57A5820E2B93D60200756C78 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		57A5820F2B93D63C00756C78 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		57A582102B93D66C00756C78 /* Edditor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Edditor;
+			sourceTree = "<group>";
+		};
+		57A582112B93D68F00756C78 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		57A582122B93D6FE00756C78 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		57A582132B93D71D00756C78 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				57C220842B80D7070050BC71 /* AppDelegate.swift */,
+				57C220862B80D7070050BC71 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		57A582142B93D76300756C78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57C220922B80D7080050BC71 /* Info.plist */,
+				57C2208D2B80D7080050BC71 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		57A582152B93D7F100756C78 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		57C220782B80D7070050BC71 = {
 			isa = PBXGroup;
 			children = (
@@ -147,12 +234,13 @@
 		57C220832B80D7070050BC71 /* VideoEdditor */ = {
 			isa = PBXGroup;
 			children = (
-				57C220842B80D7070050BC71 /* AppDelegate.swift */,
-				57C220862B80D7070050BC71 /* SceneDelegate.swift */,
+				57A5820B2B93D56600756C78 /* Modules */,
+				57A582122B93D6FE00756C78 /* Router */,
+				57A582132B93D71D00756C78 /* App */,
+				57A582142B93D76300756C78 /* Resources */,
+				57A582152B93D7F100756C78 /* Services */,
 				57C220882B80D7070050BC71 /* ViewController.swift */,
-				57C2208D2B80D7080050BC71 /* Assets.xcassets */,
 				57C2208F2B80D7080050BC71 /* LaunchScreen.storyboard */,
-				57C220922B80D7080050BC71 /* Info.plist */,
 			);
 			path = VideoEdditor;
 			sourceTree = "<group>";
