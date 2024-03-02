@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57A581E22B93AA7900756C78 /* VideoEditorUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A581DE2B93A97C00756C78 /* VideoEditorUI.framework */; };
+		57A581E32B93AA7900756C78 /* VideoEditorUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57A581DE2B93A97C00756C78 /* VideoEditorUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57C220852B80D7070050BC71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C220842B80D7070050BC71 /* AppDelegate.swift */; };
 		57C220872B80D7070050BC71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C220862B80D7070050BC71 /* SceneDelegate.swift */; };
 		57C220892B80D7070050BC71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C220882B80D7070050BC71 /* ViewController.swift */; };
@@ -18,6 +20,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		57A581DD2B93A97C00756C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57A581D72B93A97C00756C78 /* VideoEditorUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5755727F2B8BBFB50019ECB0;
+			remoteInfo = VideoEditorUI;
+		};
+		57A581DF2B93A97C00756C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57A581D72B93A97C00756C78 /* VideoEditorUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 575572892B8BBFB50019ECB0;
+			remoteInfo = VideoEditorUITests;
+		};
+		57A581EB2B93AAD600756C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57A581E52B93AAD600756C78 /* VideoEditorUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5755727F2B8BBFB50019ECB0;
+			remoteInfo = VideoEditorUI;
+		};
+		57A581ED2B93AAD600756C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57A581E52B93AAD600756C78 /* VideoEditorUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 575572892B8BBFB50019ECB0;
+			remoteInfo = VideoEditorUITests;
+		};
 		57C220982B80D7090050BC71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 57C220792B80D7070050BC71 /* Project object */;
@@ -34,7 +64,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		57A581E42B93AA7900756C78 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				57A581E32B93AA7900756C78 /* VideoEditorUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		57A581D72B93A97C00756C78 /* VideoEditorUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoEditorUI.xcodeproj; path = ../../../VideoEditorUI/VideoEditorUI.xcodeproj; sourceTree = "<group>"; };
+		57A581E52B93AAD600756C78 /* VideoEditorUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoEditorUI.xcodeproj; path = ../../VideoEditorUI/VideoEditorUI.xcodeproj; sourceTree = "<group>"; };
 		57C220812B80D7070050BC71 /* VideoEdditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEdditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C220842B80D7070050BC71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57C220862B80D7070050BC71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A581E22B93AA7900756C78 /* VideoEditorUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +121,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57A581D82B93A97C00756C78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57A581DE2B93A97C00756C78 /* VideoEditorUI.framework */,
+				57A581E02B93A97C00756C78 /* VideoEditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57A581E12B93AA7900756C78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57A581E52B93AAD600756C78 /* VideoEditorUI.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57A581E62B93AAD600756C78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57A581EC2B93AAD600756C78 /* VideoEditorUI.framework */,
+				57A581EE2B93AAD600756C78 /* VideoEditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		57C220782B80D7070050BC71 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +154,7 @@
 				57C2209A2B80D7090050BC71 /* VideoEdditorTests */,
 				57C220A42B80D7090050BC71 /* VideoEdditorUITests */,
 				57C220822B80D7070050BC71 /* Products */,
+				57A581E12B93AA7900756C78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +171,7 @@
 		57C220832B80D7070050BC71 /* VideoEdditor */ = {
 			isa = PBXGroup;
 			children = (
+				57A581D72B93A97C00756C78 /* VideoEditorUI.xcodeproj */,
 				57C220842B80D7070050BC71 /* AppDelegate.swift */,
 				57C220862B80D7070050BC71 /* SceneDelegate.swift */,
 				57C220882B80D7070050BC71 /* ViewController.swift */,
@@ -134,6 +209,7 @@
 				57C2207D2B80D7070050BC71 /* Sources */,
 				57C2207E2B80D7070050BC71 /* Frameworks */,
 				57C2207F2B80D7070050BC71 /* Resources */,
+				57A581E42B93AA7900756C78 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +290,16 @@
 			mainGroup = 57C220782B80D7070050BC71;
 			productRefGroup = 57C220822B80D7070050BC71 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 57A581D82B93A97C00756C78 /* Products */;
+					ProjectRef = 57A581D72B93A97C00756C78 /* VideoEditorUI.xcodeproj */;
+				},
+				{
+					ProductGroup = 57A581E62B93AAD600756C78 /* Products */;
+					ProjectRef = 57A581E52B93AAD600756C78 /* VideoEditorUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				57C220802B80D7070050BC71 /* VideoEdditor */,
@@ -222,6 +308,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		57A581DE2B93A97C00756C78 /* VideoEditorUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VideoEditorUI.framework;
+			remoteRef = 57A581DD2B93A97C00756C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57A581E02B93A97C00756C78 /* VideoEditorUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VideoEditorUITests.xctest;
+			remoteRef = 57A581DF2B93A97C00756C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57A581EC2B93AAD600756C78 /* VideoEditorUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VideoEditorUI.framework;
+			remoteRef = 57A581EB2B93AAD600756C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57A581EE2B93AAD600756C78 /* VideoEditorUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VideoEditorUITests.xctest;
+			remoteRef = 57A581ED2B93AAD600756C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		57C2207F2B80D7070050BC71 /* Resources */ = {

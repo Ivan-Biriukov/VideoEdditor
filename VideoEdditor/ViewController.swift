@@ -1,13 +1,8 @@
-//
-//  ViewController.swift
-//  VideoEdditor
-//
-//  Created by иван Бирюков on 17.02.2024.
-//
 
 import UIKit
+import VideoEditorUI
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
