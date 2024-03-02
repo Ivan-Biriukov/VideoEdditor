@@ -11,9 +11,16 @@
 		57A5820A2B93B03200756C78 /* VideoEditorUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57A581EC2B93AAD600756C78 /* VideoEditorUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57A582192B93D96800756C78 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A582182B93D96800756C78 /* Router.swift */; };
 		57A5821F2B93DA4C00756C78 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5821E2B93DA4C00756C78 /* Factory.swift */; };
+		57A582232B93DFDD00756C78 /* UserAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A582222B93DFDD00756C78 /* UserAuthenticationViewController.swift */; };
+		57A582292B93E01E00756C78 /* UserAuthentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A582282B93E01E00756C78 /* UserAuthentificationView.swift */; };
+		57A5822D2B93E08300756C78 /* UserAuthentificationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5822C2B93E08300756C78 /* UserAuthentificationInteractor.swift */; };
+		57A5822F2B93E0A200756C78 /* UserAuthentificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5822E2B93E0A200756C78 /* UserAuthentificationPresenter.swift */; };
+		57A582312B93E0B300756C78 /* UserAuthentificationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A582302B93E0B300756C78 /* UserAuthentificationRoutes.swift */; };
+		57A582332B93E0C200756C78 /* UserAuthentificationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A582322B93E0C200756C78 /* UserAuthentificationFactory.swift */; };
+		57A582362B93E1A500756C78 /* UIImage+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A582352B93E1A500756C78 /* UIImage+ Extension.swift */; };
+		57A582392B93E2F500756C78 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 57A582382B93E2F500756C78 /* SnapKit */; };
 		57C220852B80D7070050BC71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C220842B80D7070050BC71 /* AppDelegate.swift */; };
 		57C220872B80D7070050BC71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C220862B80D7070050BC71 /* SceneDelegate.swift */; };
-		57C220892B80D7070050BC71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C220882B80D7070050BC71 /* ViewController.swift */; };
 		57C2208E2B80D7080050BC71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C2208D2B80D7080050BC71 /* Assets.xcassets */; };
 		57C220912B80D7080050BC71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C2208F2B80D7080050BC71 /* LaunchScreen.storyboard */; };
 		57C2209C2B80D7090050BC71 /* VideoEdditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C2209B2B80D7090050BC71 /* VideoEdditorTests.swift */; };
@@ -70,10 +77,16 @@
 		57A581E52B93AAD600756C78 /* VideoEditorUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoEditorUI.xcodeproj; path = ../../VideoEditorUI/VideoEditorUI.xcodeproj; sourceTree = "<group>"; };
 		57A582182B93D96800756C78 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		57A5821E2B93DA4C00756C78 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		57A582222B93DFDD00756C78 /* UserAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationViewController.swift; sourceTree = "<group>"; };
+		57A582282B93E01E00756C78 /* UserAuthentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentificationView.swift; sourceTree = "<group>"; };
+		57A5822C2B93E08300756C78 /* UserAuthentificationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentificationInteractor.swift; sourceTree = "<group>"; };
+		57A5822E2B93E0A200756C78 /* UserAuthentificationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentificationPresenter.swift; sourceTree = "<group>"; };
+		57A582302B93E0B300756C78 /* UserAuthentificationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentificationRoutes.swift; sourceTree = "<group>"; };
+		57A582322B93E0C200756C78 /* UserAuthentificationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentificationFactory.swift; sourceTree = "<group>"; };
+		57A582352B93E1A500756C78 /* UIImage+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ Extension.swift"; sourceTree = "<group>"; };
 		57C220812B80D7070050BC71 /* VideoEdditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEdditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C220842B80D7070050BC71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57C220862B80D7070050BC71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57C220882B80D7070050BC71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		57C2208D2B80D7080050BC71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57C220902B80D7080050BC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57C220922B80D7080050BC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57A582092B93B03200756C78 /* VideoEditorUI.framework in Frameworks */,
+				57A582392B93E2F500756C78 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +157,12 @@
 		57A5820C2B93D5AA00756C78 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				57A582222B93DFDD00756C78 /* UserAuthenticationViewController.swift */,
+				57A582272B93E00000756C78 /* Views */,
+				57A5822C2B93E08300756C78 /* UserAuthentificationInteractor.swift */,
+				57A5822E2B93E0A200756C78 /* UserAuthentificationPresenter.swift */,
+				57A582302B93E0B300756C78 /* UserAuthentificationRoutes.swift */,
+				57A582322B93E0C200756C78 /* UserAuthentificationFactory.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -223,6 +243,22 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		57A582272B93E00000756C78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57A582282B93E01E00756C78 /* UserAuthentificationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57A582342B93E18800756C78 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57A582352B93E1A500756C78 /* UIImage+ Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		57C220782B80D7070050BC71 = {
 			isa = PBXGroup;
 			children = (
@@ -253,7 +289,7 @@
 				57A582132B93D71D00756C78 /* App */,
 				57A582142B93D76300756C78 /* Resources */,
 				57A582152B93D7F100756C78 /* Services */,
-				57C220882B80D7070050BC71 /* ViewController.swift */,
+				57A582342B93E18800756C78 /* Extensions */,
 				57C2208F2B80D7080050BC71 /* LaunchScreen.storyboard */,
 			);
 			path = VideoEdditor;
@@ -293,6 +329,9 @@
 			dependencies = (
 			);
 			name = VideoEdditor;
+			packageProductDependencies = (
+				57A582382B93E2F500756C78 /* SnapKit */,
+			);
 			productName = VideoEdditor;
 			productReference = 57C220812B80D7070050BC71 /* VideoEdditor.app */;
 			productType = "com.apple.product-type.application";
@@ -365,6 +404,9 @@
 				Base,
 			);
 			mainGroup = 57C220782B80D7070050BC71;
+			packageReferences = (
+				57A582372B93E2F500756C78 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 57C220822B80D7070050BC71 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -430,11 +472,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A5822D2B93E08300756C78 /* UserAuthentificationInteractor.swift in Sources */,
+				57A5822F2B93E0A200756C78 /* UserAuthentificationPresenter.swift in Sources */,
+				57A582332B93E0C200756C78 /* UserAuthentificationFactory.swift in Sources */,
 				57A582192B93D96800756C78 /* Router.swift in Sources */,
-				57C220892B80D7070050BC71 /* ViewController.swift in Sources */,
+				57A582362B93E1A500756C78 /* UIImage+ Extension.swift in Sources */,
 				57C220852B80D7070050BC71 /* AppDelegate.swift in Sources */,
+				57A582232B93DFDD00756C78 /* UserAuthenticationViewController.swift in Sources */,
+				57A582312B93E0B300756C78 /* UserAuthentificationRoutes.swift in Sources */,
 				57C220872B80D7070050BC71 /* SceneDelegate.swift in Sources */,
 				57A5821F2B93DA4C00756C78 /* Factory.swift in Sources */,
+				57A582292B93E01E00756C78 /* UserAuthentificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +827,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57A582372B93E2F500756C78 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57A582382B93E2F500756C78 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57A582372B93E2F500756C78 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57C220792B80D7070050BC71 /* Project object */;
 }

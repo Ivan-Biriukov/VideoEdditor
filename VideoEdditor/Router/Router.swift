@@ -30,6 +30,6 @@ final class Router {
  extension Router {
     
     static func userAuthenticationScreen() {
-        navigationController.pushViewController(ViewController(), animated: true)
+        navigationController.pushViewController(UserAuthenticationViewController(), animated: true)
     }
 }
