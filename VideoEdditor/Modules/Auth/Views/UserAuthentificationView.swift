@@ -34,7 +34,7 @@ final class UserAuthentificationView: UIView {
         return img
     }()
     
-    private let titleLabel: UILabel = .elementsTitleLabel(with: "Get instant Free access.", rows: 1)
+    private lazy var headerTitleLabel: UILabel = .elementsTitleLabel(with: "", rows: 1)
     
     private let tikTokBtn: SocialButton = .init(bStyle: .tikTok)
     private let googleBtn: SocialButton = .init(bStyle: .gMail)
@@ -57,7 +57,7 @@ final class UserAuthentificationView: UIView {
         return stack
     }()
     
-    private lazy var bottomLabel: UILabel = .smallDarkGrayLabels(with: "By signing up you agree to our Terms and conditions and agree to recive our Newsletter.", rows: 0)
+    private lazy var bottomLabel: UILabel = .smallDarkGrayLabels(with: "", rows: 0)
     
     // MARK: - Init
     
@@ -70,7 +70,6 @@ final class UserAuthentificationView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 
 // MARK: - Configure
@@ -78,7 +77,7 @@ final class UserAuthentificationView: UIView {
 private extension UserAuthentificationView {
     
     func addSubviews() {
-        [logoImage, titleLabel, buttonStack, bottomLabel].forEach({self.addSubview($0)})
+        [logoImage, headerTitleLabel, buttonStack, bottomLabel].forEach({self.addSubview($0)})
     }
     
     func setupConstraints() {
@@ -89,13 +88,13 @@ private extension UserAuthentificationView {
             make.top.equalToSuperview().inset(Appiarence.logoTopInset)
         }
         
-        titleLabel.snp.makeConstraints { make in
+        headerTitleLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(logoImage.snp.bottom).offset(Appiarence.logoTitleSpace)
         }
         
         buttonStack.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(Appiarence.titleStackSpace)
+            make.top.equalTo(headerTitleLabel.snp.bottom).offset(Appiarence.titleStackSpace)
             make.centerX.equalToSuperview()
         }
         
@@ -108,5 +107,20 @@ private extension UserAuthentificationView {
             make.height.equalTo(Appiarence.socialButtonsHeight)
             make.width.equalTo(Appiarence.socialButtonsWidth)
         }})
+    }
+}
+
+// MARK: - ViewModel configure
+
+extension UserAuthentificationView: ViewModelConfigurable {
+    
+    struct ViewModel {
+        var titleLabel: String
+        var bottomLabel: String
+    }
+    
+    func configure(with viewModel: ViewModel) {
+        headerTitleLabel.text = viewModel.titleLabel
+        bottomLabel.text = viewModel.bottomLabel
     }
 }

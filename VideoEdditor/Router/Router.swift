@@ -27,9 +27,15 @@ final class Router {
 
 // MARK: - Login Screen
 
- extension Router {
+extension Router: UserAuthentificationRoutes {
     
+    static func subscriptionScreen() {
+        performRoute(factory: UserAuthentificationFactory<Self>(), context: ())
+    }
+}
+
+extension Router {
     static func userAuthenticationScreen() {
-        navigationController.pushViewController(UserAuthenticationViewController(), animated: true)
+        performRoute(factory: UserAuthentificationFactory<Self>(), context: ())
     }
 }
